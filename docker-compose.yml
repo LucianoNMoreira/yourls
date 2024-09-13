@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   db:
     image: mariadb:latest
@@ -37,6 +35,7 @@ services:
       - ./user/config.php:/var/www/html/user/config.php
       - ./user/plugins/iqrcodes:/var/www/html/user/plugins/iqrcodes
       - ./user/plugins/usrv:/var/www/html/user/plugins/usrv
+      - ./user/plugins/oidc:/var/www/html/user/plugins/oidc
     depends_on:
       - db
     links:

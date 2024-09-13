@@ -1,5 +1,6 @@
 user/plugins/iqrcodes/cache/*
 user/plugins/usrv/cache/qr/*
+user/plugins/oidc/vendor
 
 !user/plugins/iqrcodes/cache/.keep
 !user/plugins/usrv/cache/qr/cache/.keep

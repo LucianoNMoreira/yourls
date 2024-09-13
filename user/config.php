@@ -90,3 +90,11 @@ $yourls_reserved_URL = [
 /*
  ** Personal settings would go after here.
  */
+
+// oidc - OpenID Plugin
+define( 'OIDC_BASE_URL', $_ENV["OIDC_BASE_URL"] );
+define( 'OIDC_CLIENT_NAME', $_ENV["OIDC_CLIENT_NAME"] );
+define( 'OIDC_CLIENT_SECRET', $_ENV["OIDC_CLIENT_SECRET"] );
+
+// oidc - all users on OIDC platform have YOURLS accounts. uses 'preferred_username' attribute
+define( 'OIDC_BYPASS_YOURLS_AUTH', true );
